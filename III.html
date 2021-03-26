@@ -1,0 +1,788 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <title>BIMF</title>
+
+   <meta name="description" content="業界最具規模、經驗豐富團隊。提供最專業BIM導入諮詢、BIM建模服務、BIM與3D-GIS整合、BIM模型後期運用。">
+   <meta name="keywords"
+     content="bim,bim fm,bimfm,bim 工程,bim 公司,bim 廠商,管理系統,工程整合,工程,BIM 是什麼,BIM顧問,BIM橋梁,土木,BIM機電,建模,模型,施工,竣工,設計,營運,維護,工程動畫,BIM帷幕,點雲,逆向工程,系統開發,客製化,BIM客製化,BIM 服務公司,繽紛科技">
+   <link rel="icon" href="img/favicon.ico.svg" type="image/x-icon" />
+
+   <meta property="og:title" content="BIMFM 繽紛科技股份有限公司" />
+   <meta property="og:description" content="業界最具規模、經驗豐富BIM公司。提供最專業BIM導入諮詢、BIM建模服務、BIM與3D-GIS整合、BIM模型後期運用。" />
+   <meta property="og:image" content="img/FB.png" />
+   <!-- google search console -->
+   <meta name="google-site-verification" content="o4PQFclsfbP6X0B_XQWSkq7_C9CHh432-3kvgcPiJZk" />
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/indexvideo.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.css">
+
+
+
+   <style>
+     /* 幻燈片CSS參數 */
+     .carousel-caption {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       z-index: 10;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       color: #fff;
+       text-align: center;
+       background-color: rgba(0, 0, 0, 0.383);
+       font-size: 22px;
+       width: 100%;
+     }
+
+     .carousel-item {
+       overflow: hidden;
+     }
+
+     @keyframes op {
+       0% {
+         opacity: 0;
+       }
+
+       45% {
+         opacity: 0;
+       }
+
+       100% {
+         opacity: 1;
+       }
+     }
+
+     /* ▼ 登入淡入的class */
+     .t123 {
+       opacity: 1;
+       animation: op 3.3s;
+
+     }
+
+     .container-fluid {
+       padding: 70px 1em 1em 1em;
+     }
+
+     .carousel-indicators {
+       bottom: 0.8em;
+       display: none;
+     }
+
+     .card {
+       margin: 1em;
+     }
+
+     @media(max-width:800px) {
+       .slick-arrow {
+         display: none !important;
+       }
+
+       .carousel-indicators {
+         display: none;
+       }
+
+       h2 {
+         text-align: center;
+       }
+
+     }
+
+     .slider img {
+       height: 280px;
+       width: auto;
+     }
+
+     .p {
+       border-left: 2px orange solid;
+     }
+
+     @media(max-width: 575px) {
+       .p {
+         border-left: 2px rgba(255, 255, 255, 0) solid;
+       }
+
+     }
+
+     /* 關於我們 */
+
+
+     #img {
+       display: block;
+       top: 0;
+       left: 10%;
+       width: 80%;
+       /* height: 100%; */
+       z-index: -1;
+       position: fixed;
+       overflow: hidden;
+     }
+
+     @media(max-width:1550px) {
+       #img {
+         display: block;
+         left: 0;
+         width: 100%;
+         /* height: 100%; */
+         z-index: -1;
+         position: fixed;
+
+       }
+     }
+
+     @media(max-width:768px) {
+       #img {
+         left: -50%;
+         width: 200%;
+       }
+
+       .line {
+         display: none;
+       }
+     }
+
+     .img123 {
+       position: absolute;
+       top: 0;
+       height: 100%;
+       width: 100%;
+       color: rgb(255, 255, 255);
+
+     }
+
+     .navbar {
+       background-color: white !important;
+     }
+
+     .t {
+       -webkit-transition: 1s;
+       -moz-transition: 1s;
+       -ms-transition: 1s;
+       -o-transition: 1s;
+       transition: 1s;
+       opacity: 1 !important;
+     }
+
+     .not {
+       -webkit-transition: 1s;
+       -moz-transition: 1s;
+       -ms-transition: 1s;
+       -o-transition: 1s;
+       transition: 1s;
+       opacity: 0 !important;
+     }
+
+     .navbar .nav-item {
+       padding: 0 9px;
+     }
+   </style>
+ </head>
+
+ <body>
+   <div id="img">
+
+     <img src="img/indexfirst.gif" style="width: 100%;">
+     <div class="img123">
+
+
+     </div>
+   </div>
+
+
+   <div id="white" class="logo">
+     <div class="animation"><a href="#"><img src="img/logo_lg.png" alt=""></a></div>
+   </div>
+   <div id="runlamp" class="runlamp">
+     <div class="run">※ 狂賀 ! 本公司『桃園共同管道設施設備管理系統』榮獲<span
+         style="text-decoration:underline;color: rgb(255, 255, 255);">「金圖獎」</span> ! ，感謝台灣地理資訊協會的肯定，以及所有同仁的辛苦付出 !</div>
+   </div>
+   <script>
+     document.addEventListener("scroll", my1);
+
+     function my1() {
+       var show = document.documentElement.scrollTop;
+       if (show <= 2400) {
+         document.getElementById("runlamp").classList.remove("not");
+         document.getElementById("runlamp").classList.add("t");
+       } else {
+         document.getElementById("runlamp").classList.add("not");
+         document.getElementById("runlamp").classList.remove("t");
+       }
+     }
+   </script>
+
+   <div class="bodycontainer">
+     <nav id="navbar" class="navbar navbar-expand-lg cd-auto-hide-header">
+       <a class="navbar-brand" href="index.html">
+         <img src="img/logo.png" alt="繽紛科技" style="width: 180px;">
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item" style=" white-space:nowrap">
+             <a class="nav-link" href="about.html"><i class="fas fa-building"></i>&nbsp;&nbsp;關於我們</a>
+           </li>
+           <li class="nav-item" style=" white-space:nowrap">
+             <a class="nav-link" href="what.html">
+               <i class="fas fa-question"></i> BIM 知
+             </a>
+           </li>
+           <li class="nav-item" style=" white-space:nowrap">
+             <a onclick="hide()" class="nav-link" href="connect.html"><i class="fas fa-fax"></i>&nbsp;&nbsp;聯絡我們</a>
+           </li>
+           <li class="nav-item" style=" white-space:nowrap">
+             <a class="nav-link" href="https://www.104.com.tw/company/1a2x6bjkr2" target="_blank"><i
+                 class="far fa-id-card"></i>&nbsp;&nbsp;徵才資訊</a>
+           </li>
+           <li class="nav-item" style=" white-space:nowrap">
+             <div class="nav-link">中文 / <a href="indexEn.html" target="_blank">English</a></div>
+
+           </li>
+         </ul>
+       </div>
+     </nav>
+     <div class="container-fluid bg-white">
+
+       <div id="carouselExampleCaptions" class="carousel slide carousel-fade t123" data-ride="carousel"
+         style="margin: 0 -1em;">
+         <ol class="carousel-indicators">
+           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+           <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+           <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+         </ol>
+         <div class="carousel-inner">
+           <div class="carousel-item active" data-interval="3000">
+             <img src="img/原圖.png
+                " class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block wow bounceInLeft" data-wow-delay="1.6s">
+               <i class="fas fa-medal" style="color:#FFDC35;"></i>『 金圖獎 』 之BIM團隊
+             </div>
+           </div>
+           <div class="carousel-item" data-interval="3000">
+             <img src="img\index2.jpg
+                " class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block wow bounceInLeft" data-wow-delay="0.3s">
+               專業 BIM 顧問，客製化解決施工問題
+             </div>
+           </div>
+           <div class="carousel-item" data-interval="3000">
+             <img src="img/index3.png
+                " class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block wow bounceInLeft" data-wow-delay="0.3s">
+               結合BIM、FM、AI、IoT之管理系統
+             </div>
+           </div>
+           <div class="carousel-item" data-interval="3000">
+             <img src="img/index4.png
+                " class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block wow bounceInLeft" data-wow-delay="0.3s">
+               跨領域、跨專業人才整合
+             </div>
+           </div>
+           <div class="carousel-item" data-interval="3000">
+             <img src="img/index5.png
+                " class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block wow bounceInLeft" data-wow-delay="0.3s">
+               我們的理念：專業、誠信、熱忱、創新
+             </div>
+           </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+       </div>
+     </div>
+     <div id="service" class="service bg-white container-fluid">
+       <div class="service-content t123">
+         <h2>服務項目</h2>
+         <hr>
+         <br>
+         <div class="row" style="padding:0;">
+           <div class="col-lg-3 col-md-6 col-12 serviceimg mb-5">
+
+             <div>
+               <img src="img/icon1.png" alt="">
+               <h4>BIM全生命週期<span style="white-space: nowrap;">整合服務</span></h4>
+               <div class="X4" style="width: 180px;">
+                 <h5>專業BIM模型建置</h5>
+                 <h5>設計階段整合</h5>
+                 <h5>施工階段整合</h5>
+                 <h5>竣工及運營階段整合</h5>
+               </div>
+             </div>
+
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 serviceimg mb-5">
+             <div>
+               <img src="img/icon2.png" alt="">
+               <h4>企業BIM應用技術導入</h4>
+               <div class="X4" style="width: 160px;">
+                 <h5>BIM軟體教育訓練</h5>
+                 <h5>BIM應用流程導入</h5>
+                 <h5>BIM執行標準擬定</h5>
+               </div>
+             </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 serviceimg mb-5">
+             <div>
+               <img src="img/icon3.png" alt="">
+               <h4>BIM工程管理<span style="white-space: nowrap;">系統開發建置</span></h4>
+               <div class="X4" style="width: 160px;">
+                 <h5>工程進度管理模組</h5>
+                 <h5>工程品質管理模組</h5>
+                 <h5>行動裝置APP模組</h5>
+                 <h5>客製化模組</h5>
+               </div>
+             </div>
+
+           </div>
+           <div class="col-lg-3 col-md-6 col-12 serviceimg mb-5">
+             <div>
+               <img src="img/icon4.png" alt="">
+               <h4>BIM設施資產管理<span style="white-space: nowrap;">系統開發建置</span></h4>
+               <div class="X4" style="width: 160px;">
+                 <h5>設施設備查詢模組</h5>
+                 <h5>設施維護管理模組</h5>
+                 <h5>行動裝置APP模組</h5>
+                 <h5>客製化模組</h5>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div id="about" style="position:relative;">
+     <div style="line-height: 65vh;text-align: center;">
+       <div style="display: inline-block;">
+         <h3>
+           關於我們
+         </h3>
+         <p>專業BIM 公司</p>
+         <p><a href="about.html" style="color: white;text-decoration:underline;">查看更多</a></p>
+       </div>
+     </div>
+     <div class="line"
+       style="position:absolute;height: 100px;width: 1px;left:50%;bottom: -50px;background-color: darkgray;"></div>
+
+   </div>
+
+
+   </div>
+   <div class="bodycontainer">
+     <div class="container-fluid bg-white">
+       <h2>BIM 專案</h2>
+       <hr>
+       <section class="regular slider wow bounceInLeft">
+
+
+
+
+         <div class="h">
+
+           <a href="img/class1.2.png" data-fancybox="img" data-caption="大型工程BIM工程整合">
+             <img src="img/class1.2.png" alt="">
+           </a>
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class1.1.jpg" data-fancybox="img" data-caption="大型工程BIM工程整合"><img src="img/class1.1.jpg"
+               alt=""></a>
+
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class1.3.jpg" data-fancybox="img" data-caption="大型工程BIM工程整合"><img src="img/class1.3.jpg"
+               alt=""></a>
+
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class1.5.png" data-fancybox="img" data-caption="大型工程BIM工程整合"><img src="img/class1.5.png"
+               alt=""></a>
+
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class1.6.png" data-fancybox="img" data-caption="大型工程BIM工程整合"><img src="img/class1.6.png"
+               alt=""></a>
+
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class1.7.png" data-fancybox="img" data-caption="大型工程BIM工程整合"><img src="img/class1.7.png"
+               alt=""></a>
+
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class1.8.png" data-fancybox="img" data-caption="大型工程BIM工程整合"><img src="img/class1.8.png"
+               alt=""></a>
+
+           <div class="intud">大型工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/p6.png" data-fancybox="img" data-caption="建物設施設備管理系統"><img src="img/p6.png" alt=""></a>
+
+           <div class="intud">建物設施設備管理系統</div>
+         </div>
+         <div class="h">
+           <a href="img/class2.1.jpg" data-fancybox="img" data-caption="建物設施設備管理系統"><img src="img/class2.1.jpg"
+               alt=""></a>
+
+           <div class="intud">建物設施設備管理系統</div>
+         </div>
+         <div class="h">
+           <a href="img/class2.2.jpg" data-fancybox="img" data-caption="建物設施設備管理系統"><img src="img/class2.2.jpg"
+               alt=""></a>
+
+           <div class="intud">建物設施設備管理系統</div>
+         </div>
+         <div class="h">
+           <a href="img/class2.3.jpg" data-fancybox="img" data-caption="建物設施設備管理系統"><img src="img/class2.3.jpg"
+               alt=""></a>
+
+           <div class="intud">建物設施設備管理系統</div>
+         </div>
+         <div class="h">
+           <a href="img/class3.1.jpg" data-fancybox="img" data-caption="捷運系統BIM工程整合"><img src="img/class3.1.jpg"
+               alt=""></a>
+
+           <div class="intud">捷運系統BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class3.2.jpg" data-fancybox="img" data-caption="捷運系統BIM工程整合"><img src="img/class3.2.jpg"
+               alt=""></a>
+
+           <div class="intud">捷運系統BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class3.3.jpg" data-fancybox="img" data-caption="捷運系統BIM工程整合"><img src="img/class3.3.jpg"
+               alt=""></a>
+
+           <div class="intud">捷運系統BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class3.4.jpg" data-fancybox="img" data-caption="捷運系統BIM工程整合"><img src="img/class3.4.jpg"
+               alt=""></a>
+
+           <div class="intud">捷運系統BIM工程整合</div>
+         </div>
+
+         <div class="h">
+           <a href="img/p4.png" data-fancybox="img" data-caption="3D GIS+BIM工程整合"><img src="img/p4.png" alt=""></a>
+
+           <div class="intud">3D GIS+BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.1.png" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.1.png"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.2.png" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.2.png"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.3.png" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.3.png"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.4.png" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.4.png"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.5.png" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.5.png"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.6.png" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.6.png"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.8.jpg" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.8.jpg"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class4.9.jpg" data-fancybox="img" data-caption="3D GIS+BIM整合"><img src="img/class4.9.jpg"
+               alt=""></a>
+
+           <div class="intud">3D GIS+BIM整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class5.1.png" data-fancybox="img" data-caption="BIM+IoT智慧建築整合"><img src="img/class5.1.png"
+               alt=""></a>
+
+           <div class="intud">BIM+IoT智慧建築整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class5.2.png" data-fancybox="img" data-caption="BIM+IoT智慧建築整合"><img src="img/class5.2.png"
+               alt=""></a>
+
+           <div class="intud">BIM+IoT智慧建築整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class5.3.png" data-fancybox="img" data-caption="BIM+IoT智慧建築整合"><img src="img/class5.3.png"
+               alt=""></a>
+
+           <div class="intud">BIM+IoT智慧建築整合</div>
+         </div>
+
+         <div class="h">
+           <a href="img/class6.1.jpg" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/class6.1.jpg"
+               alt=""></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="" data-fancybox="img" data-caption=""></a>
+           <img src="img/class6.2.jpg" alt="">
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class6.3.jpg" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/class6.3.jpg"
+               alt=""></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class6.4.bmp" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/class6.4.bmp"
+               alt=""></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/p5.png" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/p5.png"
+               alt="大型土木工程BIM工程整合"></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class6.5.jpg" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/class6.5.jpg"
+               alt=""></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class6.6.jpg" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/class6.6.jpg"
+               alt=""></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+         <div class="h">
+           <a href="img/class6.7.jpg" data-fancybox="img" data-caption="大型土木工程BIM工程整合"><img src="img/class6.7.jpg"
+               alt=""></a>
+
+           <div class="intud">大型土木工程BIM工程整合</div>
+         </div>
+       </section>
+
+     </div>
+     <div id="knowledge">
+       <div class="container-fluid bg-white">
+         <h2>BIM 知識</h2>
+         <hr>
+         <div class="row align-items-center">
+           <div class="col-xl-12 col-12">
+             <div class="row">
+               <div class="col-12 col-md-6 col-lg-4 col-xl-3 c">
+                 <div class="card">
+                   <img src="img/what.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">何謂『BIM』建築資訊模型？什麼是『BIM』？
+                     </h5>
+                     <p class="card-text">BIM具有可視化，協調性，模擬性，最佳化和可出圖性五大特點..</p>
+                     <a href="what.html" class="btn btn-info">繼續閱讀...</a>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 col-xl-3 c">
+                 <div class="card">
+                   <img src="img\What's The Bim.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">「如何選擇一間專業的 BIM 服務公司？」
+                     </h5>
+                     <p class="card-text">一家專業的 BIM 服務公司至少應具備下列條件：1. 具有豐富工程執行經驗..</p>
+                     <a href="select.html" class="btn btn-info">繼續閱讀...</a>
+                   </div>
+                 </div>
+               </div>
+               <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 c">
+                 <div class="card">
+                   <img src="img\City Buildings.png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">何謂『BIM』建築資訊模型？什麼是『BIM』？
+                     </h5>
+                     <p class="card-text">BIM具有可視化，協調性，模擬性，最佳化和可出圖性五大特點..</p>
+                     <a href="#" class="btn btn-info">繼續閱讀...</a>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 col-xl-3 c">
+                 <div class="card">
+                   <img src="img\What's The Bim ___  (1).png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">何謂『BIM』建築資訊模型？什麼是『BIM』？
+                     </h5>
+                     <p class="card-text">BIM具有可視化，協調性，模擬性，最佳化和可出圖性五大特點..</p>
+                     <a href="#" class="btn btn-info">繼續閱讀...</a>
+                   </div>
+                 </div>
+               </div> -->
+
+               <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 c">
+                 <div class="card">
+                   <img src="img\What's The Bim ___  (3).png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">何謂『BIM』建築資訊模型？什麼是『BIM』？
+                     </h5>
+                     <p class="card-text">BIM具有可視化，協調性，模擬性，最佳化和可出圖性五大特點..</p>
+                     <a href="#" class="btn btn-info">繼續閱讀...</a>
+                   </div>
+                 </div>
+               </div> -->
+               <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3 c">
+                 <div class="card">
+                   <img src="img\What's The Bim ___  (4).png" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">何謂『BIM』建築資訊模型？什麼是『BIM』？
+                     </h5>
+                     <p class="card-text">BIM具有可視化，協調性，模擬性，最佳化和可出圖性五大特點..</p>
+                     <a href="#" class="btn btn-info">繼續閱讀...</a>
+                   </div>
+                 </div>
+               </div> -->
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div id="bcard" data-wow-duration="1.2s" data-wow-delay="0.2s">
+
+       <div class="container-fluid bcard wow serviceimg bounceInLeft" style="padding:100px 0;">
+
+         <div class="row d-flex align-items-center bg-white">
+           <div class="col-12 col-sm-5 pt-4">
+             <img src="img/logo_lg.png" alt="" style="width:100%!important;height: auto;">
+           </div>
+           <div class="col-12 col-sm-7">
+             <h4 style="font-size: 22px;">報價 / 簡報 / 服務諮詢</h4>
+             <h4 style="margin-bottom: 1em;">歡迎與我們聯絡!</h4>
+             <p><a href="connect.html">填寫聯絡表單</a></p>
+             <p>林小姐</p>
+             <p>Tel : (02)2771-1198 # 226</p>
+             <p>Email : sales@bimfm.com.tw</p>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+
+     <footer>
+       <p style="margin-bottom: 0;">
+         Copyright © 2020 BIMFM TECHNOLOGY CO., LTD | All Rights Reserverd
+       </p>
+     </footer>
+   </div>
+
+
+
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script src="js\Jquery1.4.3.js"></script>
+   <script>
+     var jq = $.noConflict(true);
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+   </script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+   <script src="js\jquery.scrolling-parallax.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.js"></script>
+
+   <script>
+     $('.carousel').carousel({
+       pause: false
+     })
+   </script>
+
+   <script>
+     new WOW().init();
+   </script>
+   <script>
+     $(document).ready(function () {
+       $("#white").fadeOut(1700)
+     });
+   </script>
+   <script type="text/javascript">
+     // jq(function () {
+     //   jq.scrollingParallax('img/indexfirst.gif', {
+     //     bgHeight: '150%',
+     //     staticSpeed: .1,
+     //     staticScrollLimit: false,
+
+     //   });
+     // });
+     jq('#img').scrollingParallax({
+       staticSpeed: 0.05,
+       bgHeight: '500%',
+       staticScrollLimit: false,
+       reverseDirection: true
+     });
+   </script>
+   <!-- 隱藏底部跑馬燈 -->
+
+   <script>
+     function hide() {
+       document.getElementById("navbarSupportedContent").classList.remove("show");
+     }
+   </script>
+
+
+
+ </body>
+
+
+ </html>
