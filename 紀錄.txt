@@ -1,0 +1,104 @@
+Microsoft Windows [版本 10.0.18363.1440]
+(c) 2019 Microsoft Corporation. 著作權所有，並保留一切權利。
+
+C:\Users\USER>D:
+
+D:\>cd  D:\git練習
+
+D:\git練習>gin init
+'gin' 不是內部或外部命令、可執行的程式或批次檔。
+
+D:\git練習>git init
+Initialized empty Git repository in D:/git練習/.git/
+
+D:\git練習>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+D:\git練習>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git練習>git add .
+
+D:\git練習>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+D:\git練習>git commit -m "First commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'USER@LAPTOP-Q2AFB81V.(none)')
+
+D:\git練習>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+D:\git練習>git config --global user.email "lktk2520@gmail.com"
+
+D:\git練習>git config --global user.name "Henrry Chen"
+
+D:\git練習>git commit -m "firstcommit"
+[master (root-commit) 45fc114] firstcommit
+ 1 file changed, 788 insertions(+)
+ create mode 100644 index.html
+
+D:\git練習>git branch
+* master
+
+D:\git練習>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        III.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git練習>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        III.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git練習>git add .
+
+D:\git練習>git commit -m "Scond Commit"
+[master 103df9a] Scond Commit
+ 1 file changed, 788 insertions(+)
+ create mode 100644 III.html
+
+D:\git練習>
